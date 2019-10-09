@@ -1,0 +1,19 @@
+
+.lslide {
+  width: 679px;
+  height: 482px;
+}
+.lSSlideOuter .lSPager.lSpg > li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
+}
+#block-working__slider {
+  .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+    background-color: #FFFFFF;
+  }
+  a {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+  }
+}
