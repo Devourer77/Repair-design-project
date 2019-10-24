@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Test</title>
 </head>
 <body class="mx-auto">
 <header class="w-100 header row no-gutters">
-    <div class="logo col-2 d-flex justify-content-end align-items-center">IC "Repair Design Project</div>
-    <nav class="navigation col-7 d-flex justify-content-around align-items-center">
+    <div class="logo col-md-2 col-6 d-flex justify-content-md-end justify-content-center align-items-center">IC "Repair Design Project</div>
+    <nav class="navigation col-md-7 d-md-flex d-none justify-content-around align-items-center">
         <a class="" href="#">Home</a>
         <a class="" href="#">Projects</a>
         <a class="" href="#">Measurement</a>
@@ -15,43 +16,67 @@
         <a class="" href="#">Rewiews</a>
         <a class="" href="#">Contacts</a>
     </nav>
-    <div class="number col-3 d-flex justify-content-around align-items-center">
-        <a>+7 (928) 768-32-39</a>
-        <div class="number_button d-flex align-items-center justify-content-center">Request a call</div>
+    <div class="number col-md-3 col-6 d-flex justify-content-around align-items-center">
+        <a href="tel:">+7 (928) 768-32-39</a>
+        <a class="number_button d-md-flex d-none align-items-center justify-content-center" href="#">Request a call</a>
     </div>
 
 </header>
 <section class="wrapper">
     <div class="main-photo row no-gutters">
-        <div class="main-photo__col-inst col-1 d-flex align-items-center justify-content-center">
+        <div class="main-photo__col-inst col-md-1 d-none d-md-flex align-items-center justify-content-center">
             <div class="main-photo__inst d-flex align-items-center justify-content-between">
-            <div class="main-photo__inst-link">INSTAGRAM</div>
+            <a class="main-photo__inst-link" href="#">INSTAGRAM</a>
             <div class="main-photo__inst-line"></div>
             </div>
         </div>
-        <div class="main-photo__photo col-11 d-flex justify-content-center pl-4 pb-4 flex-column">
+        <div class="main-photo__photo col-md-11 col-12 d-flex align-items-center align-items-md-start justify-content-center pl-md-4 pb-md-4 flex-column">
             <div class="main-photo__title mb-1 ml-3">Turnkey Repair in the city of <span class="main-photo__title-city">Rostov-on-Don</span></div>
             <div class="main-photo__subtitle my-2 ml-3">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</div>
-            <div class="main-photo__links d-flex justify-content-between mt-3 ml-3">
+            <div class="main-photo__links flex-column flex-md-row d-flex justify-content-between mt-3 ml-3">
                 <a class="main-photo__link-calculate d-flex align-items-center justify-content-center" href="#">CALCULATE THE COST</a>
                 <a class="main-photo__link-submit d-flex align-items-center justify-content-center" href="#">SUBMIT YOUR APPLICATION</a>
             </div>
         </div>
-        <div class="main-photo__scroll d-flex align-items-center justify-content-center">
+        <div class="main-photo__scroll d-none d-md-flex align-items-center justify-content-center">
             <div class="main-photo__scroll-title">Scroll down</div>
             <button class="main-photo__scroll-button mx-3" type="button"></button>
         </div>
     </div>
-    <div class="block-product row no-gutters">
-        <div class="block-product__information col-5 d-flex align-items-center justify-content-center">
-            <div class="block-product__information-group d-flex flex-column">
-            <div class="block-product__title mb-3">
+    <div class="block-product row no-gutters d-flex">
+        <div class="block-product__information col-md-5 col-12 d-flex align-items-center justify-content-center">
+            <div class="block-product__information-group justify-content-around align-items-center align-items-md-start d-flex flex-column">
+            <div class="block-product__title text-md-left text-center mb-md-3">
                 Completed projects
             </div>
-            <div class="block-product__subtitle my-4">
+            <div class="block-product__subtitle my-md-4 text-md-left text-center">
                 Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
             </div>
-            <div class="block-product__other mt-4 d-flex flex-wrap align-content-between">
+                <div class="block-product__information-swiper d-md-none">
+                    <div class="block-galery__mobile-swiper_product">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper d-flex">
+                                <div class="swiper-slide">
+                                    <img class="block-galery__mobile_image" src="assets/image/block-product-swiper.png" alt="photo" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="block-galery__mobile_image" src="assets/image/block-product-swiper.png" alt="photo" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="block-galery__mobile_image" src="assets/image/block-product-swiper.png" alt="photo" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="block-galery__mobile_image" src="assets/image/block-product-swiper.png" alt="photo" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="block-product__other mt-md-4 d-flex flex-wrap align-content-between">
                 <div class="block-product__item d-flex flex-column">
                     <div class="block-product__item-title mb-2">City:</div>
                     <div class="block-product__item-subtitle">Rostov-on-Don LCD admiral</div>
@@ -73,35 +98,35 @@
             </div>
 <!--            <div class="block-product__navigation"></div>-->
         </div>
-        <div class="block-product__slider col-7">
+        <div class="block-product__slider col-md-7 flex-column d-md-flex d-none">
             <div class="block-product__active row no-gutters justify-content-between">
-                <div class="block-product__nav-slide">Rostov-on-Don, Admiral</div>
-                <div class="block-product__nav-slide">Sochi Thieves</div>
-                <div class="block-product__nav-slide">Rostov-on-Don Patriotic</div>
+                <div id="slide-ros" class="block-product__nav-slide ">Rostov-on-Don, Admiral</div>
+                <div id="slide-sochi" class="block-product__nav-slide ">Sochi Thieves</div>
+                <div id="slide-don" class="block-product__nav-slide block-product__nav-slide-don">Rostov-on-Don Patriotic</div>
             </div>
             <ul id="lightSlider">
-                <li style="background: url('/assets/image/block__product-slide1.png') no-repeat">
+                <li class="lightSlider__one" style="background: url('./assets/image/block__product-slide1.png') no-repeat">
                 </li>
-                <li class="lightSlider__two" style="background: url('/assets/image/block__product-slide2.png') no-repeat">
+                <li class="lightSlider__two" style="background: url('./assets/image/block__product-slide2.png') no-repeat">
                 </li>
-                <li class="lightSlider__two" style="background: url('/assets/image/block__product-slide2.png') no-repeat">
+                <li class="lightSlider__two" style="background: url('./assets/image/block__product-slide2.png') no-repeat">
                 </li>
             </ul>
         </div>
     </div>
     <div class="block-control d-flex align-items-center flex-column">
         <div class="block-control__title">online control</div>
-        <video class="block-control__video" poster="/assets/image/online-control.png" controls autoplay>
-            <iframe src="https://www.youtube.com/watch?v=MpJLkXkv3K0&feature=youtu.be"></iframe>
-        </video>
+        <iframe class="block-control__video" poster="./assets/image/online-control.png" src="https://www.youtube-nocookie.com/embed/-MCo2vTYAio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
         <div class="block-control__subtitle">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</div>
     </div>
     <div class="block-form d-flex justify-content-center">
-        <form class="block-form__form d-flex justify-content-between flex-wrap align-items-center row no-gutters" name="registration">
-            <input class="block-form__input col-3" type="text" placeholder="What is your name:" />
-            <input class="block-form__input col-3" type="tel" placeholder="Your phone number:" />
-            <button class="block-form__button col-3" type="submit">Submit</button>
-            <div class="block-form__checkbox-complit col-12">
+        <form class="block-form__form d-flex justify-content-between flex-md-wrap align-items-center flex-column flex-md-row no-gutters" name="registration">
+            <input class="block-form__input col-md-3" type="text" placeholder="What is your name:" />
+            <input class="block-form__input col-md-3" type="tel" placeholder="Your phone number:" />
+            <button class="block-form__button col-md-3" type="submit">Submit</button>
+            <div class="block-form__checkbox-complit col-md-12">
             <input class="block-form__input-checkbox" type="checkbox" />
                 I agree to the processing of personal data
             </div>
@@ -110,8 +135,8 @@
     </div>
     <div class="block-types d-flex align-items-center flex-column">
         <div class="block-types__title">TYPES OF REPAIR</div>
-        <div class="block-types__style row no-gutters">
-            <div class="block-types__style-repair back-redec d-flex justify-content-center col-4">
+        <div class="block-types__style d-md-flex flex-column align-items-center flex-md-row no-gutters">
+            <div class="block-types__style-repair back-redec d-flex justify-content-start justify-content-md-center col-12 col-md-4">
                 <div class="block-types__style-description">
                     <div class="block-types__style-title">Redecorating</div>
                     <ul>
@@ -128,7 +153,7 @@
                     </a>
                 </div>
             </div>
-            <div class="block-types__style-repair back-over d-flex justify-content-center col-4">
+            <div class="block-types__style-repair back-over d-flex justify-content-start justify-content-md-center col-12 col-md-4">
                 <div class="block-types__style-description">
                     <div class="block-types__style-title">Overhaul</div>
                     <ul>
@@ -145,7 +170,7 @@
                     </a>
                 </div>
             </div>
-            <div class="block-types__style-repair back-design d-flex justify-content-center col-4">
+            <div class="block-types__style-repair back-design d-flex justify-content-start justify-content-md-center col-12 col-md-4">
                 <div class="block-types__style-description">
                     <div class="block-types__style-title">Designer Repair</div>
                     <ul>
@@ -164,10 +189,25 @@
             </div>
         </div>
     </div>
-    <div class="block-bawl row no-gutters">
+    <div class="block-bawl d-none d-md-flex row no-gutters">
         <div class="block-bawl__bawl col-7">
             <div class="block-bawl__bawl-border">
-
+                <div class="block-bawl__bawl-border_item-1 d-flex align-items-center justify-content-start">
+                    <div class="block-bawl__item-number ml-3 d-flex align-items-center justify-content-center">01</div>
+                    <div class="block-bawl__item-title ml-3 d-flex align-items-center">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</div>
+                </div>
+                <div class="block-bawl__bawl-border_item-2 d-flex align-items-center justify-content-start">
+                    <div class="block-bawl__item-number d-flex align-items-center justify-content-center">02</div>
+                    <div class="block-bawl__item-title ml-3 d-flex align-items-center">Free metering</div>
+                </div>
+                <div class="block-bawl__bawl-border_item-3 d-flex align-items-center justify-content-start">
+                    <div class="block-bawl__item-number d-flex align-items-center justify-content-center">03</div>
+                    <div class="block-bawl__item-title ml-3 d-flex align-items-center">Free consultation</div>
+                </div>
+                <div class="block-bawl__bawl-border_item-4 d-flex align-items-center justify-content-start">
+                    <div class="block-bawl__item-number d-flex align-items-center justify-content-center">04</div>
+                    <div class="block-bawl__item-title ml-3 d-flex align-items-center">Get a cost estimate and the timing of your future repairs</div>
+                </div>
             </div>
         </div>
         <div class="block-bawl__form d-flex align-items-start justify-content-center flex-column col-5">
@@ -201,7 +241,7 @@
             </div>
         </div>
     </div>
-    <div class="block-galery row no-gutters">
+    <div class="block-galery d-none d-md-flex row no-gutters">
         <div class="block-galery__list d-flex flex-column align-items-center justify-content-center col-5">
             <div class="block-galery__title">We realize your <br>wildest fantasies</div>
             <div class="block-galery__list-img">
@@ -227,11 +267,36 @@
             <img class="block-galery__image4" src="assets/image/block-galery-image4.png" alt="photo" />
         </div>
     </div>
+    <div class="block-galery__mobile d-flex d-md-none flex-column align-items-center">
+        <div class="block-galery__mobile-title">We realize your wildest fantasies</div>
+        <div class="block-galery__mobile-swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper d-flex">
+                    <div class="swiper-slide">
+                        <img class="block-galery__mobile_image" src="assets/image/block-galery-mobile.png" alt="photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="block-galery__mobile_image" src="assets/image/block-galery-mobile.png" alt="photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="block-galery__mobile_image" src="assets/image/block-galery-mobile.png" alt="photo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="block-galery__mobile_image" src="assets/image/block-galery-mobile.png" alt="photo" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
     <div class="block-design d-flex flex-column align-items-center">
         <div class="block-design__title">design project</div>
         <div class="block-design__subtitle">Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.</div>
-        <div class="block-design__product row no-gutters justify-content-between">
-            <div class="block-design__mini d-flex justify-content-center">
+        <div class="block-design__product flex-md-row flex-column d-md-flex no-gutters justify-content-between">
+            <div class="block-design__mini d-flex justify-content-md-center justify-content-start">
                 <div class="block-design__product-item block-design__product-mini d-flex flex-column align-items-start">
                     <div class="block-design__mini-title">Mini</div>
                     <ul>
@@ -245,7 +310,7 @@
                     </a>
                 </div>
             </div>
-            <div class="block-design__standart d-flex justify-content-center">
+            <div class="block-design__standart d-flex justify-content-md-center justify-content-start">
                 <div class="block-design__product-item block-design__product-standart d-flex flex-column align-items-start">
                     <div class="block-design__mini-title">Standard</div>
                     <ul>
@@ -262,7 +327,7 @@
                     </a>
                 </div>
             </div>
-            <div class="block-design__full d-flex justify-content-center">
+            <div class="block-design__full d-flex justify-content-md-center justify-content-start">
                 <div class="block-design__product-item block-design__product-full d-flex flex-column align-items-start">
                     <div class="block-design__mini-title">Full</div>
                     <ul>
@@ -286,7 +351,7 @@
             </div>
         </div>
     </div>
-    <div class="block-working row no-gutters">
+    <div class="block-working d-none d-md-flex row no-gutters">
         <div class="block-working__steps col-5 d-flex justify-content-center">
             <div class="block-working__6-steps">
                 <div class="block-working__6-steps_subtitle">How we are working</div>
@@ -352,6 +417,147 @@
             </div>
             <div class="block-working__slide-image"></div>
         </div>
+    </div>
+    <div class="block-team d-flex flex-column align-items-center">
+        <div class="block-team__inform d-flex flex-column align-items-center">
+            <div class="block-team__title">
+                our team
+            </div>
+            <div class="block-team__subtitle">
+                Our team has helped to become happier for more than 500 families and we are not going to stop
+            </div>
+        </div>
+        <div class="block-team__team d-flex flex-column align-items-center">
+            <div class="block-team__team-card d-md-flex flex-md-row flex-column no-gutters justify-content-between">
+                <div class="block-team__team-card_item block-team__team-card_item1 d-flex align-items-end justify-content-center">
+                    <div class="block-team__team-card_item-inf">
+                        <div class="block-team__team-card_title d-flex flex-column justify-content-center">
+                            Dmitry tulyakov
+                            <span>Project manager</span>
+                        </div>
+                        <a class="block-team__team-card_link d-flex align-items-center justify-content-center" href="#">
+                            Work experience 8 years
+                        </a>
+                    </div>
+                </div>
+                <div class="block-team__team-card_item block-team__team-card_item2 d-flex align-items-end justify-content-center">
+                    <div class="block-team__team-card_item-inf">
+                        <div class="block-team__team-card_title d-flex flex-column justify-content-center">
+                            Larisa Kotlyarova
+                            <span>Designer</span>
+
+                        </div>
+                        <a class="block-team__team-card_link d-flex align-items-center justify-content-center" href="#">
+                            Work experience 6 years
+                        </a>
+                    </div>
+                </div>
+                <div class="block-team__team-card_item block-team__team-card_item3 d-flex align-items-end justify-content-center">
+                    <div class="block-team__team-card_item-inf">
+                        <div class="block-team__team-card_title d-flex flex-column justify-content-center">
+                            Alexey Efimov
+                            <span>Foreman</span>
+                        </div>
+                        <a class="block-team__team-card_link d-flex align-items-center justify-content-center" href="#">
+                            Work experience 12 years
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="block-team__team-subtitle d-none d-md-flex">
+                Each employee of our company is a qualified full-time specialist<br>
+                with work experience of 6 years.<br>
+                We do not have laborers and guest workers, each employee carries out<br>
+                work corresponding to his specialty.
+            </div>
+        </div>
+    </div>
+    <div class="block-clients d-none d-md-flex flex-column align-items-center justify-content-between">
+        <div class="block-clients__inf d-flex flex-column align-items-center">
+            <div class="block-clients__inf-title">
+                our clients
+            </div>
+            <div class="block-clients__inf-subtitle">
+                80% of our customers recommend us to their friends and family.
+            </div>
+        </div>
+        <div class="block-clients__feedback d-flex row no-gutters justify-content-between">
+            <div class="block-clients__feedback-item d-flex flex-column justify-content-between">
+                <div class="block-clients__feedback-name">
+                    <img src="assets/image/clients-image.png">
+                    Fedosova Maria Konstantinovna
+                </div>
+                <div class="block-clients__feedback-subtitle">
+                    i want to thank the guys for their work. we put your shower part in repair. i am very grateful that i referred to the repair as to my own. great thanks i express the project to georgia for its professionalism and approach. the repair process was turned out in terms, faster than anticipated. team mobile and professional. works performed qualitatively without comments. quality satisfied. prices democratic. i recommend these masters.
+                </div>
+                <div class="block-clients__feedback-links d-flex justify-content-between">
+                    <a class="block-clients__feedback-link-one d-flex justify-content-center align-items-center" href="#">40 m2</a>
+                    <a class="block-clients__feedback-link-two d-flex justify-content-center align-items-center" href="#">48 DAYS</a>
+                </div>
+            </div>
+            <div class="block-clients__feedback-item d-flex flex-column justify-content-between">
+                <div class="block-clients__feedback-name">
+                    <img src="assets/image/clients-image2.png">
+                    Fedosova Maria Konstantinovna
+                </div>
+                <div class="block-clients__feedback-subtitle">
+                    i want to thank the guys for their work. we put your shower part in repair. i am very grateful that i referred to the repair as to my own. great thanks i express the project to georgia for its professionalism and approach. the repair process was turned out in terms, faster than anticipated. team mobile and professional. works performed qualitatively without comments. quality satisfied. prices democratic. i recommend these masters.
+                </div>
+                <div class="block-clients__feedback-links d-flex justify-content-between">
+                    <a class="block-clients__feedback-link-one d-flex justify-content-center align-items-center" href="#">40 m2</a>
+                    <a class="block-clients__feedback-link-two d-flex justify-content-center align-items-center" href="#">48 DAYS</a>
+                </div>
+            </div>
+            <div class="block-clients__feedback-item d-flex flex-column justify-content-between">
+                <div class="block-clients__feedback-name">
+                    <img src="assets/image/clients-image3.png">
+                    Fedosova Maria Konstantinovna
+                </div>
+                <div class="block-clients__feedback-subtitle">
+                    i want to thank the guys for their work. we put your shower part in repair. i am very grateful that i referred to the repair as to my own. great thanks i express the project to georgia for its professionalism and approach. the repair process was turned out in terms, faster than anticipated. team mobile and professional. works performed qualitatively without comments. quality satisfied. prices democratic. i recommend these masters.
+                </div>
+                <div class="block-clients__feedback-links d-flex justify-content-between">
+                    <a class="block-clients__feedback-link-one d-flex justify-content-center align-items-center" href="#">40 m2</a>
+                    <a class="block-clients__feedback-link-two d-flex justify-content-center align-items-center" href="#">48 DAYS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-questions d-flex justify-content-center">
+        <div class="block-questions__form d-flex flex-column align-items-center justify-content-around">
+            <div class="block-questions__form-title">have any questions?</div>
+            <form class="block-questions__form-main d-flex flex-wrap justify-content-center align-content-between">
+                <div class="block-questions__mobile_block d-flex justify-content-between flex-md-row no-gutters flex-column align-items-center w-100">
+                <div class="block-questions__form_input-name">
+                    <div class="block-questions__form_input-title">Name</div>
+                    <input class="block-questions__form_input-input" type="text" placeholder="What is your name:" />
+                </div>
+                <div class="block-questions__form_input-phone">
+                    <div class="block-questions__form_input-title">Number</div>
+                    <input class="block-questions__form_input-input" type="text" placeholder="Your phone number:" />
+                </div>
+                </div>
+                <div class="block-questions__form_input-quest">
+                    <div class="block-questions__form_input-title">Question</div>
+                    <input class="block-questions__form_input-input" type="text" placeholder="I want to know:" />
+                </div>
+                <div class="block-questions__form_check d-flex justify-content-md-center justify-content-start align-items-center">
+                    <input type="checkbox" />
+                    I agree to the processing of personal data
+                </div>
+                <button class="block-questions__form_button d-flex justify-content-center align-items-center" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="block-map d-flex flex-md-column flex-column-reverse justify-content-around justify-content-md-start align-items-center">
+        <div class="block-map__inf d-flex flex-column align-items-center">
+            <div class="block-map__inf-title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</div>
+            <div class="block-map__inf-icon d-flex justify-content-between">
+                <a href="#" class="block-map__inf-icon-link block-map__mail"> </a>
+                <a href="#" class="block-map__inf-icon-link block-map__inst"> </a>
+            </div>
+        </div>
+        <div class="block-map__map"></div>
     </div>
 
 </section>

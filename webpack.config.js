@@ -27,10 +27,10 @@ module.exports = function(){
         },
         plugins: [
             new HtmlWebpackPlugin({
-                title: 'Testovoe',
+                title: 'repair-design-project',
                 template: path.resolve('./src/index.html')
             }),
-            new webpack.HotModuleReplacementPlugin()
+            new webpack.HotModuleReplacementPlugin(),
         ],
         module: {
             rules: [
@@ -70,14 +70,14 @@ module.exports = function(){
                         {
                             loader: "file-loader",
                             options: {
-                                outputPath: './images',
+                                outputPath: './assets/image',
                                 name: "[name].[ext]",
                             },
                         },
                     ]
                 },
                 {
-                    test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                    test: /\.(woff(2)?|ttf|otf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                     use: [
                         {
                             loader: 'file-loader',

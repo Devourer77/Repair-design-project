@@ -1,5 +1,5 @@
 {
-  "name": "testovoe",
+  "name": "repair-design-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -27,6 +27,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.2.0",
     "style-loader": "^0.23.1",
+    "url-loader": "^2.2.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.2.0",
     "webpack-dev-server": "^3.1.14"
@@ -39,6 +40,6 @@
     "jquery": "^3.4.1",
     "lightslider": "^1.1.6",
     "popper.js": "^1.15.0",
-    "url-loader": "^2.1.0"
+    "swiper": "^5.1.0"
   }
 }
